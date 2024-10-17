@@ -1,0 +1,68 @@
+{
+	"publisher": "lihbr",
+	"name": "theme-farben",
+	"displayName": "Farben Theme",
+	"type": "module",
+	"version": "0.0.0",
+	"packageManager": "pnpm@9.12.2",
+	"description": "Farben theme for VS Code",
+	"author": "Lucie Haberer <hello@lihbr.com> (https://lihbr.com)",
+	"license": "MIT",
+	"homepage": "https://github.com/lihbr/vscode-theme-farben",
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@github.com/lihbr/vscode-theme-farben.git"
+	},
+	"keywords": [
+		"lihbr",
+		"farben",
+		"textmate",
+		"theme",
+		"dark"
+	],
+	"categories": [
+		"Themes"
+	],
+	"sideEffects": false,
+	"exports": {
+		"./*": "./*"
+	},
+	"icon": "icon.png",
+	"files": [
+		"LICENSE",
+		"farben.json",
+		"icon.png"
+	],
+	"engines": {
+		"vscode": "^1.43.0"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Farben",
+				"uiTheme": "vs-dark",
+				"path": "./farben.json"
+			}
+		]
+	},
+	"scripts": {
+		"build": "tsx build.ts",
+		"dev": "tsx watch --exclude ./farben.json build.ts",
+		"release": "npm run test && bumpp && vsce publish --no-dependencies",
+		"pack": "vsce pack --no-dependencies",
+		"release:dry": "npx changelogithub --dry",
+		"lint": "eslint .",
+		"typecheck": "tsc --noEmit",
+		"unit": "exit 0",
+		"test": "pnpm lint && pnpm typecheck && pnpm unit && pnpm build"
+	},
+	"devDependencies": {
+		"@lihbr/eslint-config": "^0.0.3",
+		"bumpp": "^9.7.1",
+		"eslint": "^9.12.0",
+		"tm-themes": "^1.9.0",
+		"tsx": "4.19.1",
+		"typescript": "^5.6.3",
+		"vsce": "^2.15.0"
+	}
+}
