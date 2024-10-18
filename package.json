@@ -3,7 +3,7 @@
 	"name": "theme-farben",
 	"displayName": "Farben Theme",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"packageManager": "pnpm@9.12.2",
 	"description": "Farben theme for VS Code",
 	"author": "Lucie Haberer <hello@lihbr.com> (https://lihbr.com)",
