@@ -92,7 +92,7 @@
 		"terminal.ansiWhite": "#e7d7d7",
 		"terminal.ansiYellow": "#d19618",
 		"titleBar.activeBackground": "#131010",
-		"widget.shadow": "#00000098"
+		"widget.shadow": "#00000099"
 	},
 	"displayName": "Farben",
 	"name": "farben",

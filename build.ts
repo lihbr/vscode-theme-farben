@@ -5,7 +5,7 @@ import process from "node:process"
 import { fileURLToPath } from "node:url"
 
 import monokai from "tm-themes/themes/monokai.json"
-import colors from "./colors.json"
+import { colors } from "./colors"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)

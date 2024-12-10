@@ -58,6 +58,7 @@
 	},
 	"devDependencies": {
 		"@lihbr/eslint-config": "^0.0.3",
+		"@lihbr/farben": "^0.0.1",
 		"bumpp": "^9.7.1",
 		"eslint": "^9.12.0",
 		"tm-themes": "^1.9.0",
